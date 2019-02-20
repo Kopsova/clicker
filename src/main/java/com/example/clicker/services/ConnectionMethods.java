@@ -10,6 +10,7 @@ public class  ConnectionMethods{
         Document d = new Document("");
         try {
             d = Jsoup.connect(url).get();
+
         }
         catch (Exception ex){
         ex.printStackTrace();

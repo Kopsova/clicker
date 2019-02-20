@@ -3,6 +3,9 @@ package com.example.clicker.model;
 public class URLJsonInput {
     String urlAdress;
 
+    public URLJsonInput() {
+    }
+
     public URLJsonInput(String urlAdress) {
         this.urlAdress = urlAdress;
     }

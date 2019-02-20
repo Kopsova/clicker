@@ -15,7 +15,7 @@ public class RestControllers {
 
     @GetMapping(value = "/")
     public ResponseEntity returnDocument(@RequestBody URLJsonInput urlJsonInput){
-        return ResponseEntity.ok(connectionMethods.getDocument(urlJsonInput.getUrlAdress()));
+        return ResponseEntity.ok(connectionMethods.getDocument(urlJsonInput.getUrlAdress()).html());
 
     }
 }
